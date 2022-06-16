@@ -71,20 +71,20 @@ class BlogPostContentFulTemplate extends React.Component {
 
 export default BlogPostContentFulTemplate
 
-export const pageQuery = graphql`
-  query BlogPostContentfulBySlug(
-    $slug: String!
-    $previousPostSlug: String
-    $nextPostSlug: String
-  ) {
-    allContentfulIntro {
-      edges {
-        node {
-          title
-          description
-          id
-        }
-      }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query BlogPostContentfulBySlug(
+//     $slug: String!
+//     $previousPostSlug: String
+//     $nextPostSlug: String
+//   ) {
+//     allContentfulIntro {
+//       edges {
+//         node {
+//           title
+//           description
+//           id
+//         }
+//       }
+//     }
+//   }
+// `
