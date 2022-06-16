@@ -1,6 +1,5 @@
 import { Box, Button, Typography } from '@mui/material'
 import React from 'react'
-
 import HeroImgOne from '../assets/heroImgOne.svg'
 import HeroImgTwo from '../assets/heroImgTwo.svg'
 

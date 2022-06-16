@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
+import './global.css'
 import * as styles from './navigation.module.css'
 import { Avatar, Typography } from '@mui/material'
 import { Box } from '@mui/system'
@@ -16,7 +16,7 @@ const Navigation = () => (
     }}
   >
     <nav role="navigation" className={styles.container} aria-label="Main">
-      <Link to="/" className={styles.logoLink}>
+      <Box className={styles.logoLink}>
         <Avatar sx={{ bgcolor: '#FF8049', width: 53, height: 53 }}>K</Avatar>
         <Typography
           style={{ fontSize: '20px', marginLeft: '20px', fontWeight: '700' }}
@@ -24,7 +24,7 @@ const Navigation = () => (
           Kinka <br />
           Finance
         </Typography>
-      </Link>
+      </Box>
       <ul className={styles.navigation}>
         <li className={styles.navigationItem}>
           <Link to="#calculator" activeClassName="active">

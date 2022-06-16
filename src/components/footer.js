@@ -19,10 +19,12 @@ export const IconSocial = ({ icon }) => {
         boxShadow: '0px 4px 70px rgba(91, 91, 91, 0.05)',
         borderRadius: '100px',
         color: '#fff',
-        p: '13px',
+        position: 'relative',
       }}
     >
-      {icon}
+      <Box sx={{ position: 'absolute', top: '12px', right: '12px' }}>
+        {icon}
+      </Box>
     </Box>
   )
 }

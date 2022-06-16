@@ -1,9 +1,9 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import get from 'lodash/get'
-
-import Layout from '../components/layout'
 import Hero from '../components/hero'
+import Navigation from '../components/navigation'
+import Footer from '../components/footer'
 import ArticlePreview from '../components/article-preview'
 import Calculator from '../components/calculator'
 
@@ -13,11 +13,13 @@ class RootIndex extends React.Component {
     const hero = get(this, 'props.data.contentfulHero')
 
     return (
-      <Layout location={this.props.location}>
+      <>
+        <Navigation />
         <Hero title={hero.title} description={hero.description} />
         <ArticlePreview posts={posts} />
         <Calculator />
-      </Layout>
+        <Footer />
+      </>
     )
   }
 }
