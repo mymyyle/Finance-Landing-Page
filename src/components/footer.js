@@ -81,7 +81,7 @@ const Footer = () => (
 
     <Grid container spacing={2} sx={{ pl: '50px' }}>
       {infos.map((info) => (
-        <Grid xs={4} key={info.title}>
+        <Grid item xs={4} key={info.title}>
           <Stack spacing={3}>
             <Typography
               sx={{ fontSize: '20px', fontWeight: '700', lineHeight: '36px' }}
